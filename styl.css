@@ -1,0 +1,256 @@
+#glowny{
+    background-color: transparent;
+    color:black;
+    width: 1300px;
+    height: 1400px;
+    margin: 0px auto 0px auto;
+    z-index:1;
+}
+
+body{
+    background-image: url("tlo.jpg");
+    background-size: 2000px auto;
+    background-attachment: fixed;
+    background-position-y: 0px;
+    padding: 0px;
+    margin-top: 60px;
+    height:100%;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.8);
+    width:100%;
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+    clear: both;
+}
+
+main{
+    width:79%;
+    margin: 30px 1% 10px 0px;
+    height: fit-content;
+    min-height: 900px;
+    background-color: rgba(255, 255, 255, 0.8);
+    float: left;
+    animation-name: zLewo ;
+    animation-duration: 0.8s;
+}
+
+footer{
+    clear: both;
+    width:100%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.8);
+    animation-name: zDolu ;
+    animation-duration: 0.8s;
+}
+
+footer div{
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    font-family: Arial;
+    font-size: 40px;
+    text-align: center;
+    background-image: linear-gradient(to right, #cf0000, #cfc000, #00c000, #00c0cf, #0000cf);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+nav{
+    position: relative;
+    top: 0px;
+    height:fit-content;
+    width: fit-content;
+    padding:0px;
+    margin:0px auto 0px auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    background-color: #e0e0e0;
+    height: 50px;
+    font-family: Arial;
+    font-size: 200%;
+    font-weight: 600;
+    padding:5px;
+}
+
+nav ul{
+    clear: both;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li{
+    display: inline;
+    margin-left:3px;
+    margin-right: 3px;
+}
+
+nav ul li a:hover{
+    color:white;
+    background-color: black;
+}
+
+header img{
+    width:150px;
+    height: 150px;
+    float:left;
+    margin-left: 30px;
+}
+
+header h1 {
+    font-family: Arial;
+    font-weight: 1000;
+    margin: 0px auto 0px auto;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    top: 20px;
+    color: transparent;
+    background-image: url("tlo.jpg");
+    background-clip: text;
+    background-size: 1300px;
+    -webkit-background-clip: text;
+}
+
+#prawyPanel {
+    width:20%;
+    margin: 30px 0px 10px 0px;
+    height: 900px;
+    background-color: rgba(255, 255, 255, 0.8);
+    float: right;
+    color: black;
+}
+
+#czas, #data{
+    width: 80%;
+    height: fit-content;
+    text-align: center;
+    padding-top:5px;
+    margin:auto;
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+}
+
+#czas{
+       border-bottom: #cfcfcf 1px solid;
+       padding-bottom: 5px;
+}
+
+.antyzaznacz{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#tlo{
+    width: 80%;
+    left:10%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0px;
+    z-index:-1;
+}
+
+@keyframes zLewo {
+    from {
+        opacity:0;
+        transform: translateX(-300px);
+        }
+
+    to {
+        opacity:1;
+        transform: translateX(0px);
+        }
+}
+
+@keyframes zDolu {
+    from {
+        opacity:0;
+        transform: translateY(300px);
+        }
+
+    to {
+        opacity:1;
+        transform: translateY(0px);
+        }
+}
+
+@media all and (max-width: 1090px){
+    header{
+        height:390px;
+    }
+
+    nav ul li{
+        display: block;
+        width:300px;
+        margin-bottom: 15px;
+    }
+
+    nav ul li a {
+        width:500px;
+    }
+
+}
+
+@media all and (max-width: 1300px){
+
+    #glowny{
+        width:100%;
+    }
+
+    #prawyPanel{
+        clear: both;
+        margin: 30px 0px 0px 0px;
+        width: 100%;
+        min-height: none;
+        height: fit-content;
+    }
+
+    main{
+        width:100%;
+        height:fit-content;
+        min-height:900px;
+        clear:both;
+        margin: 10px 0px 10px 0px;
+    }
+
+    #tlo{
+        width:100%;
+        left:0px;
+        right:0px;
+        margin: 0px auto 0px auto;
+    }
+
+}
+
+@media all and (max-width: 1640px) and (min-width: 1300px){
+    #tlo{
+        width:1300px;
+        left:0px;
+        right:0px;
+        margin: 0px auto 0px auto;
+    }
+}
+
+main h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+main h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+

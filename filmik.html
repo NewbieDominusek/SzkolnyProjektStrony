@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styl.css">
+        <script src="paralaxjs.js"></script>
+        <script src="zegardata.js"></script>
+    </head>
+    <body onscroll="paralax()" onload="zegar(), data(), wysokosc()" id="body">
+        <div id="tlo"></div>
+        <div id="glowny">
+
+            <header class="antyzaznacz">
+                <img src="approved.jpg">
+                <h1>Ciekawa strona <br> internetowa</h1>
+                <nav>
+                    <ul>
+                        <li class="antyzaznacz">
+                            <a href="index.html">Strona Główna</a>
+                        </li>
+                        <li class="antyzaznacz">
+                            <a href="kolorowyIpsum.html">Lorem Ipsum</a>
+                        </li>
+                        <li>
+                            <a href="filmik.html">Filmik</a>
+                        </li class="antyzaznacz">
+                        <li>
+                            <a href="kontakt.html">Kontakt</a>
+                        </li class="antyzaznacz">
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="prawyPanel">
+                <div id="czas"></div>
+                <div id="data"></div>
+            </div>
+            
+            <main>
+                <video controls src="7_menu.mp4" width="100%"></video>
+            </main>
+
+            <footer class="antyzaznacz">
+                <div>
+                Strona wykonana przez: Dominik Dworak <br>
+                Klasa: 3JG
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>
